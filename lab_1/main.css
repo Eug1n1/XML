@@ -1,0 +1,51 @@
+note {
+    display:block; 
+    text-align:center; 
+    margin:10px 20px 10px 20px; 
+    margin-top:12pt; 
+    border: 5px double #8C0088;  
+    font-size:15pt
+}
+
+title {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #8C0088;
+}
+
+university {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #8C0088;
+    font-weight: bold;
+}
+
+city {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #8C0088;
+}
+
+points {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+plan {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #8C0088;
+    font-weight: bold;
+}
+
+points::before {
+    content: "Проходные баллы: ";
+    font-weight: normal;
+}
+
+plan::before {
+    content: "План набора: ";
+    font-weight: normal;
+}
+

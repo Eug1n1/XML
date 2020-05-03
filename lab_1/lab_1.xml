@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="main.css"?>
 
 <specialization>
     <note>
         <title>Программное обеспечение информационных технологий</title>
         <university>БГУИР</university>
+        <city>Минск</city>
         <plan>85</plan>
         <points>360</points>
     </note>
         <note>
         <title>Программное обеспечение информационных технологий (программирование Интернет-приложений)</title>
         <university>БГТУ</university>
+        <city>Минск</city>
         <plan>40</plan>
         <points>330</points>
     </note>
         <note>
         <title>Программное обеспечение информационных технологий</title>
-        <university>БГУИР</university>
-        <plan>85</plan>
-        <points>360</points>
+        <university>БНТУ</university>
+        <city>Минск</city>
+        <plan>30</plan>
+        <points>340</points>
     </note>
 
 </specialization>
