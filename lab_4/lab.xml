@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="C:\Users\User\source\repos\XML\lab_4\style.xsl"?>
+
+<students>
+    <note>
+        <name>Евгений</name>
+        <surname>Шумский</surname>
+        <year>2001</year>
+        <average>4.75</average>
+    </note>
+
+    <note>
+        <name>Иван</name>
+        <surname>Иванов</surname>
+        <year>2001</year>
+        <average>6</average>
+    </note>
+
+    <note>
+        <name>Пётр</name>
+        <surname>Петров</surname>
+        <year>2000</year>
+        <average>6</average>
+    </note>
+
+    <note>
+        <name>Алексей</name>
+        <surname>Алексеев</surname>
+        <year>2002</year>
+        <average>7</average>
+    </note>
+</students>
