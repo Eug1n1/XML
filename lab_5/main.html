@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="file" onchange="processFiles(this.files)" multiple>
+    <div id="inp"></div>
+
+    <script>
+        function processFiles(files){
+            var file1 = files[0];
+            var file2 = files[1];
+            var reader = new FileReader();
+            var reader2 = new FileReader();
+            var parser = new DOMParser();
+            var txt = "";
+
+            reader.readAsText(file1)
+            reader.onload = function(e){
+                xml = e.target.result;
+                console.log(xml);
+                xmlDoc = parser.parseFromString(xml, "text/xml");
+                document.getElementById("inp").innerHTML += "Имя: " + xmlDoc.getElementsByTagName("name")[0].innerHTML + "<br>";
+                document.getElementById("inp").innerHTML += "Фамилия: " + xmlDoc.getElementsByTagName("surname")[0].innerHTML + "<br>";
+                document.getElementById("inp").innerHTML += "Год рождения: " + xmlDoc.getElementsByTagName("year")[0].innerHTML + "<br>";
+                document.getElementById("inp").innerHTML += "Средний балл: " + xmlDoc.getElementsByTagName("average")[0].innerHTML + "<br>"+ "<br>"+ "<br>";
+            }
+
+            
+
+            reader2.readAsText(file2)
+            reader2.onload = function(e){
+                xml2 = e.target.result;
+                console.log(xml2);
+                xmlDoc2 = parser.parseFromString(xml2, "text/xml");
+                document.getElementById("inp").innerHTML += "Имя: " + xmlDoc2.getElementsByTagName("name")[0].innerHTML + "<br>";
+                document.getElementById("inp").innerHTML += "Фамилия: " + xmlDoc2.getElementsByTagName("surname")[0].innerHTML + "<br>";
+                document.getElementById("inp").innerHTML += "Год рождения: " + xmlDoc2.getElementsByTagName("year")[0].innerHTML + "<br>";
+                document.getElementById("inp").innerHTML += "Средний балл: " + xmlDoc2.getElementsByTagName("average")[0].innerHTML + "<br>"+ "<br>"+ "<br>";
+            }
+        }
+    </script>
+</body>
+</html>
