@@ -1,0 +1,7 @@
+<!DOCTYPE note [ 
+<!ELEMENT note (title,university,plan,points)> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT university (#PCDATA)> 
+<!ELEMENT plan (#PCDATA)> 
+<!ELEMENT points (#PCDATA)>
+]> 

@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<specialization>
-    <note>
-        <title>Программное обеспечение информационных технологий</title>
-        <university>БГУИР</university>
-        <plan>85</plan>
-        <points>360</points>
-    </note>
-        <note>
-        <title>Программное обеспечение информационных технологий (программирование Интернет-приложений)</title>
-        <university>БГТУ</university>
-        <plan>40</plan>
-        <points>330</points>
-    </note>
-        <note>
-        <title>Программное обеспечение информационных технологий</title>
-        <university>БГУИР</university>
-        <plan>85</plan>
-        <points>360</points>
-    </note>
+<!DOCTYPE note [ 
+<!ELEMENT note (title,university,plan,points)> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT university (#PCDATA)> 
+<!ELEMENT plan (#PCDATA)> 
+<!ELEMENT points (#PCDATA)>
+]> 
 
-</specialization>
+<note>
+    <title>Программное обеспечение информационных технологий</title>
+    <university>БГУИР</university>
+    <plan>85</plan>
+    <points>360</points>
+</note>
+
+<note>
+    <title>Программное обеспечение информационных технологий (программирование Интернет-приложений)</title>
+    <university>БГТУ</university>
+    <plan>40</plan>
+    <points>330</points>
+</note>
+
+<note>
+    <title>Программное обеспечение информационных технологий</title>
+    <university>БГУИР</university>
+    <plan>85</plan>
+    <points>360</points>
+</note>

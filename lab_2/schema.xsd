@@ -1,0 +1,18 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="spec">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="note"> 
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name = "title" type="xs:string"/>
+                        <xs:element name = "university" type="xs:string"/>
+                        <xs:element name = "plan" type="xs:string"/>
+                        <xs:element name = "points" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

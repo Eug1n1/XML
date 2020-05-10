@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog>
-   <cd>
-     <title>Empire Burlesque</title>
-     <artist>Bob Dylan</artist>
-     <country>USA</country>
-     <company>Columbia</company>
-     <price>10.90</price>
-     <year>1985</year>
-   </cd>
-</catalog>
+<?xml-stylesheet type="text/xsl" href="C:\Users\User\source\repos\XML\lab_3\style.xsl"?>
+<spec>
+	<note>
+		<title>Программное обеспечение информационных технологий</title>
+		<university>БГУИР</university>
+		<plan>85</plan>
+		<points>360</points>
+	</note>
+
+	<note>
+		<title>Программное обеспечение информационных технологий (программирование Интернет-приложений)</title>
+		<university>БГТУ</university>
+		<plan>40</plan>
+		<points>330</points>
+	</note>
+
+	<note>
+		<title>Программное обеспечение информационных технологий</title>
+		<university>БГУИР</university>
+		<plan>85</plan>
+		<points>360</points>
+	</note>
+</spec>
