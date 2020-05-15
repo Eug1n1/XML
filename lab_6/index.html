@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .f{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <svg width="600px" height="600px" class="f">
+
+        <defs> 
+            <linearGradient id = "grad"> 
+                <stop offset = "30%" stop-color = "red"/> 
+                <stop offset = "70%" stop-color = "yellow"/> 
+            </linearGradient> 
+        </defs>
+
+        <ellipse rx="110" ry="70" cx="115" cy="70" fill="red" stroke="green" stroke-width="7" transform ="rotate(90 200 200) translate(200 200)"/>
+        <circle r="50" cx="130" cy="180" fill="red" stroke="green" stroke-width="7"/>
+        <circle r="20" cx="70" cy="280" fill="red" stroke="green" stroke-width="7"/>
+        <circle r="20" cx="190" cy="280" fill="red" stroke="green" stroke-width="7"/>
+        <circle r="30" cx="75" cy="420" fill="red" stroke="green" stroke-width="7"/>
+        <circle r="30" cx="180" cy="420" fill="red" stroke="green" stroke-width="7"/>
+        <circle r="10" cx="110" cy="170"/>
+        <circle r="10" cx="150" cy="170"/>
+        <circle r="20" cx="130" cy="200"/>
+        <ellipse rx="20" ry="10" cx="130" cy="210" fill="red"/>
+        <circle r="20" cx="400" cy="50" fill="gold"/>
+        <circle r="20" cx="400" cy="65" fill="grey" fill-opacity="30%"/>
+        <circle r="20" cx="380" cy="70" fill="grey" fill-opacity="30%"/>
+        <circle r="20" cx="360" cy="65" fill="grey" fill-opacity="30%"/>
+        <circle r="20" cx="410" cy="80" fill="grey" fill-opacity="30%"/>
+        <circle r="20" cx="390" cy="90" fill="grey" fill-opacity="30%"/>
+        <circle r="20" cx="370" cy="100" fill="grey" fill-opacity="30%"/>
+        <circle r="20" cx="350" cy="80" fill="grey" fill-opacity="30%"/>
+        <line x1="300" y1="400" x2="400" y2="300" stroke="black" stroke-width="5" />
+        <line x1="300" y1="400" x2="400" y2="300" stroke="black" stroke-width="5" transform="rotate(270 400 300)"/>
+        <circle r="40" cx="400" cy="20" transform="translate(0 380) skewX(60)" fill="url(#grad)"/>
+    </svg>
+</body>
+</html>
