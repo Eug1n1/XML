@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="400" height="250" style="border: 1px black solid">
+        <g>
+            <title>background</title>
+            <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+            <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+             <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+            </g>
+           </g>
+           <g>
+            <title>Layer 1</title>
+            <rect id="svg_3" height="49" width="30" y="162.453125" x="137.5" stroke-opacity="null" stroke="#000" fill="#C97A86"/>
+            <rect id="svg_5" height="49" width="30" y="171.453125" x="125.5" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="#FFAAB8"/>
+            <rect id="svg_9" height="49" width="30" y="166.453125" x="251.5" stroke-opacity="null" stroke="#000" fill="#C97A86"/>
+            <rect id="svg_10" height="49" width="30" y="175.453125" x="239.5" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="#FFAAB8"/>
+            <rect id="svg_1" height="98" width="184" y="81.453125" x="112.5" stroke="#000" fill="#FFAAB8"/>
+            <rect id="svg_2" height="77" width="91" y="45.453125" x="245.5" stroke="#000" fill="#FFAAB8"/>
+            <rect id="svg_11" height="29" width="46" y="87.453125" x="272.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#C97A86"/>
+            <rect id="svg_12" height="18" width="7" y="93.453125" x="284.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <rect id="svg_13" height="18" width="7" y="93.453125" x="301.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <rect stroke="#000" id="svg_14" height="24" width="19.999999" y="57.453125" x="260.5" stroke-opacity="null" stroke-width="null" fill="#DDDDDD"/>
+            <rect stroke="#000" id="svg_17" height="24" width="19.999999" y="57.453125" x="303.5" stroke-opacity="null" stroke-width="null" fill="#DDDDDD"/>
+            <rect id="svg_18" height="12" width="10" y="67.453125" x="264.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <rect id="svg_19" height="12" width="10" y="59.453125" x="309.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+           </g>
+    </svg>
+
+    <svg width="400" height="250" style="border: 1px red solid">
+
+        <defs>
+            <filter id="f3" x="0" y="0" width="150%" height="150%">
+              <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+        </defs>
+
+        <g>
+            <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+            <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+             <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+            </g>
+           </g>
+           <g>
+            <title>Layer 1</title>
+            <rect id="svg_3" height="49" width="30" y="200" x="0" stroke-opacity="null" stroke="#000" fill="grey" transform="rotate(90 10 245)"/>
+            <rect id="svg_5" height="49" width="30" y="171.453125" x="125.5" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="grey" filter="url(#f3)"/>
+            <rect id="svg_9" height="49" width="30" y="166.453125" x="251.5" stroke-opacity="null" stroke="#000" fill="grey" fill-opacity="0.55"/>
+            <rect id="svg_10" height="49" width="30" y="175.453125" x="239.5" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="grey"/>
+            <rect id="svg_1" height="98" width="250" y="81.453125" x="112.5" stroke="#000" fill="grey" transform="rotate(90 245 45)"/>
+            <rect id="svg_2" height="77" width="91" y="45.453125" x="245.5" stroke="#000" fill="grey"/>
+            <rect id="svg_11" height="29" width="46" y="87.453125" x="272.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="white"/>
+            <rect id="svg_12" height="18" width="7" y="93.453125" x="284.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <rect id="svg_13" height="18" width="7" y="93.453125" x="301.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <rect stroke="#000" id="svg_14" height="24" width="19.999999" y="57.453125" x="260.5" stroke-opacity="null" stroke-width="5" fill="red"/>
+            <rect stroke="#000" id="svg_17" height="24" width="19.999999" y="57.453125" x="303.5" stroke-opacity="null" stroke-width="null" fill="blue"/>
+            <rect id="svg_18" height="12" width="10" y="67.453125" x="264.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <rect id="svg_19" height="100" width="50" y="100" x="10" fill="pink"/>
+            <rect id="svg_20" height="12" width="10" y="59.453125" x="309.5" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#000000"/>
+            <circle r="30" cx="200" cy="100" fill="blue" />
+           </g>
+    </svg>
+</body>
+</html>

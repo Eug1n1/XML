@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="1200px" height="1000px">
+
+        <style>
+            .text{
+                fill: red;
+                font-size: 23pt;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .cls {
+                font-size: 30px;
+                fill: url(#Gradients2);
+                font-family: Arial;
+                font-weight: 700;
+            }
+
+        </style>
+
+        <defs>   
+            <path id="line" d="M 100 350 q 150 -300 300 0" />  
+            <linearGradient id="Gradients">
+                <stop offset="10%" stop-color="#ed3f69" />
+                <stop offset="20%" stop-color="#f8ff32" />
+                <stop offset="60%" stop-color="#bb96e3" />
+                <stop offset="80%" stop-color="#44ff9a" />
+            </linearGradient>
+            <linearGradient id="Gradients2">
+                <stop offset="10%" stop-color="#cc0099" />
+                <stop offset="20%" stop-color="#999999" />
+                <stop offset="60%" stop-color="#cc6633" />
+                <stop offset="80%" stop-color="#ff6600" />
+            </linearGradient> 
+        </defs> 
+
+        <text x="10" y="20">WRITE SOMETHING HERE</text>
+        <text x="10" y="20" dx="10" dy="20">WRITE SOMETHING HERE</text>
+        <text x="10" y="20" dx="20" dy="40" text-anchor="middle">WRITE SOMETHING HERE text-anchor</text>
+        <text x="10" y="20" dx="30" dy="60" text-anchor="end">WRITE SOMETHING HERE text-anchor</text>
+
+
+        <text x="500" y="500" rotate="270"  textLength="200" lengthAdjust="spacingAndGlyphs" transform="rotate(90 400 400)">rotate="90"</text>
+
+        <text x="400" y="400"><tspan style="font-family: Arial; fill: white; stroke: black; font-size: 18pt;">dolor sit amet</tspan></text>
+
+        <use xlink:href="#line"/>
+        <text class="text">
+            <textPath xlink:href="#line">Something looks like random letters</textPath>
+        </text>
+        
+        <text x="500" y="500" class="cls">rotate="90"</text>
+
+
+        <text id="my" x="100" y="700">камри 3.5 японцы вещи делают</text>
+        <animate xlink:href="#my"  attributeName="x" values="0; 500; 0" dur="8s" repeatCount="indefinite"/>
+        <animate xlink:href="#my"  attributeName="fill" values="red; lightblue; red" dur="8s" repeatCount="indefinite"/>
+        <animate xlink:href="#my"  attributeName="font-size" values="20; 50; 20" dur="8s" repeatCount="indefinite"/>
+
+
+    </svg>
+</body>
+</html>

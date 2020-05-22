@@ -5,7 +5,12 @@
     <title>Document</title>
 </head>
 <body>
-    <svg width="600px" height="1200px">
+    <svg width="600px" height="1800px">
+
+        <defs>
+            <path id="heart" d="M100 34.976c0 8.434-3.635 16.019-9.423 21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.849.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019 3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0 28.726 12.861 28.726 28.726z"></path>
+        </defs>
+
         <circle r="30" cx="50" cy="50">
             <animate attributeName="cx" values="50; 500; 50" dur="3s" repeatCount="indefinite"/> 
         </circle>
@@ -23,13 +28,17 @@
             <animate attributeName="stroke-width" values="0; 5; 0" dur="2s" repeatCount="indefinite" begin="mouseover" end="mouseout"/>
         </circle>
 
-        <circle r="30" cx="50" cy="450">
+        <!-- <circle r="30" cx="50" cy="450">
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1 1" to="2 2" dur="2s" repeatCount="indefinite"/>
-        </circle>
+        </circle> -->
 
         <line x1="50" y1="550" x2="500" y2="550" stroke-width="20" stroke="black" stroke-dasharray="5 10" stroke-dashoffset="3">
             <animate attributeName="stroke-dasharray" values="5 10; 20 0; 5 10" dur="3s" repeatCount="indefinite"/>
         </line>
+
+        <use xlink:href="#heart" x="50" y="650">
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1 1" to="2 2" dur="2s" repeatCount="indefinite"/>
+        </use> 
     </svg>
 </body>
 </html>
