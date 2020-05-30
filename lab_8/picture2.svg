@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="300px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2000 2000"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:yellow;stroke-width:10;stroke-miterlimit:22.9256}
+    .fil2 {fill:none}
+    .fil0 {fill:black}
+    .fil1 {fill:green}
+   ]]>
+  </style>
+  <filter id="f1" x="0" y="0" width="200%" height="200%">
+    <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="300.39" y="1143" width="500" height="635" filter="url(#f1)"/>
+  <ellipse class="fil1 str0" cx="419.1" cy="700" rx="300" ry="100" opacity="0.5"/>
+  <circle r="200" cx="400" cy="360" stroke="blue" stroke-width="10" fill="red"/>
+  <line class="fil2 str0" x1="1000" y1="800" x2="1400" y2= "200" />
+ </g>
+</svg>
